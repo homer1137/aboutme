@@ -6,10 +6,8 @@ import Navibar from "./Navibar";
 export default function Layout() {
   return (
     <>
-        
-        <Navibar/>
-       
-       
+      <Navibar />
+
       <Outlet />
     </>
   );
