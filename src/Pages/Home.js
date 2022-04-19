@@ -10,8 +10,8 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       axios
-      .get("https://jsonplaceholder.typicode.com/photos", )
-      .then((response) => response.data.slice(0, 24))
+      .get("https://jsonplaceholder.typicode.com/photos?_limit=24", )
+      .then((response) => response.data)
       .then((res) => {
         if (res) setPhotos(res);
       })
@@ -25,7 +25,7 @@ export default function Home() {
   const PhotsReady = () => {
     if (photos) {
       return photos.map((item) => (
-    <Card key={item.id} style={{ width: '18rem' }} border={'secondary'}>
+    <Card key={item.id} style={{ width: '18rem', margin: '1rem'}} border={'secondary'}>
   <Card.Img variant="top" src={item.url} />
   <Card.Body>
     <Card.Title>Фотография №{item.id}</Card.Title>
@@ -48,7 +48,7 @@ export default function Home() {
       
       <Container >
       <h1>Home</h1>
-      <Row xs={2} md={4} lg={'auto'} gap={3} className="space-between">
+      <Row xs={2} md={4} lg={'auto'} gap={3} className="space-between" style={{justifyContent: 'center'}}>
       
       <PhotsReady />
       

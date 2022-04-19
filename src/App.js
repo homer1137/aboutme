@@ -6,6 +6,8 @@ import Detail from "./Pages/Detail";
 import Home from "./Pages/Home";
 import NotFoundPage from "./Pages/NotFoundPage";
 import Layout from "./Components/Layout";
+import Redux2TestPage from "./Pages/Redux2TestPage";
+import Redux1TestPage from "./Pages/Redux1TestPage";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Route path="/photos/:id" element={<Detail />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/redux1testpage" element={<Redux1TestPage />} />
+          <Route path="/redux2testpage" element={<Redux2TestPage />} />
         </Route>
       </Routes>
     </>

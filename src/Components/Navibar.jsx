@@ -21,6 +21,12 @@ export default function Navibar() {
               <Nav.Link as={Link} to='/about' href='/about'>
                Обо мне
               </Nav.Link>
+              <Nav.Link as={Link} to='/redux1testpage' href='/redux1testpage'>
+               TodoList
+              </Nav.Link>
+              <Nav.Link as={Link} to='/redux2testpage' href='/redux2testpage'>
+              Todo editor
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
