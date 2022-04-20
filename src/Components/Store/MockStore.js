@@ -18,7 +18,7 @@ export const todoList = [
   },
   {
     ud: uuidv4(),
-    text: "be fucking rich",
+    text: "lern something new",
     done: false,
   },
 ];
